@@ -9,11 +9,6 @@ class Config:
     def __init__(self, config: Dict2Class):
         self.config = config
 
-        try:
-            self.mode = self.config.mode
-        except AttributeError:
-            self.mode = "test"
-
         self.config_file_path = self.config.config_file_path
         self.config_file_name = self.config.config_file_name
 
@@ -21,8 +16,7 @@ class Config:
 
         self.random_seed_string = f"random_seed-{self.config.random_seed}"
         self.output_root_dir = os.path.join("outputs", self.config_file_path_name, self.config_file_name, self.random_seed_string)
-        if self.mode == "test":
-            os.makedirs(self.output_root_dir, exist_ok=True)
+        os.makedirs(self.output_root_dir, exist_ok=True)
 
         self.method_name = self.config.method_name
         self.method_config = self.config.method_config_dict.__dict__
@@ -92,7 +86,5 @@ class Config:
 
         self.verbose = self.config.verbose
 
-        self.save_cache = self.config.save_cache
-        self.use_cache = self.config.use_cache
 
 

@@ -166,7 +166,7 @@ class DatasetLoader:
         self.te_dataset_list = []
 
         for dataset in self.config.dataset_list:
-            if self.config.mode == "test" and not dataset.available:
+            if not dataset.available:
                 continue
             for txt_file_path in dataset.use_for_train:
                 with open(txt_file_path, "r") as f:

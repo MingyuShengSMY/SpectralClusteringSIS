@@ -148,8 +148,6 @@ class DataSplitter(Config):
 def main(arguments):
     config = load_config_file(arguments.config_file)
     config = Dict2Class(config)
-    config.save_cache = False
-    config.use_cache = False
 
     data_splitter = DataSplitter(config)
 

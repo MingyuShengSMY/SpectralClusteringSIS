@@ -27,7 +27,6 @@ ONLY_SAMPLES = False
 class Method:
     def __init__(self, config: Config):
         self.model = None
-        self.mode = config.mode
         self.optimizer = None
         self.config = config
         self.pre_load_dict = None
@@ -127,39 +126,26 @@ def main():
     args = parser.parse_args()
     config = load_config_file(args.config_file)
 
-    config["mode"] = args.mode
-
     config = Dict2Class(config)
     if args.random_seed <= -1:
         pass
     else:
         config.random_seed = args.random_seed
-    config.save_cache = True if args.save_cache else False
-    config.use_cache = True if args.use_cache else False
 
     config = Config(config)
 
     seed_everything(config.random_seed)
 
-    if args.mode == 'test':
-        config.load_model_mark = True
-
     method = Method(config)
 
-    if args.mode == 'train':
-        method.train()
-    else:
-        method.test()
+    method.test()
 
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 
     parser.add_argument('--config_file', help='path/to/target/config_file.json')
-    parser.add_argument('--mode', help='train or test')
     parser.add_argument('--random_seed', default=-1, help='random seed, this will overwrite the random seed in config files')
-    parser.add_argument('--save_cache', default=0, type=int, help='saving intermedia result for fast experiment')
-    parser.add_argument('--use_cache', default=1, type=int, help='using intermedia result for fast experiment')
 
     args = parser.parse_args()
 
