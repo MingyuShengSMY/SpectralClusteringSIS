@@ -3,14 +3,10 @@ import time
 
 import torch
 import numpy as np
-from skimage.filters import threshold_otsu
 from myUtils.config import Config
 from myUtils.Log import CsvLog
-from myUtils.dataset_config import DatasetConfig
-from torch.utils.data import DataLoader
 from fvcore.nn import flop_count, parameter_count
-import fvcore
-from myUtils.others import *
+from myUtils.others import count_parameters
 
 sys.path.append("..")
 from dataloader import DatasetLoader, MyDataset

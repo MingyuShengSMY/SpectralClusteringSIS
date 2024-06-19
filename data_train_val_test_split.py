@@ -2,7 +2,6 @@ import argparse
 import glob
 import sys
 
-from myUtils.Dict2Class import Dict2Class
 from torch.utils.data import random_split
 
 sys.path.append("")

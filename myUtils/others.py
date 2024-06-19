@@ -1,15 +1,10 @@
 import json
 import os
 
-import cv2
 import numpy as np
 import torch
 import torch.nn.functional as F
 import random
-
-import matplotlib.colors as clr
-
-from skimage.feature import SIFT
 
 
 def get_normed_laplacian_matrix(affinity_matrix: torch.Tensor):

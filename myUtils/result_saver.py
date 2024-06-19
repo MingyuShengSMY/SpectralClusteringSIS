@@ -7,20 +7,13 @@ import torch
 
 from dataloader import MyDataset
 from myUtils.config import Config
-from myUtils.dataset_config import DatasetConfig
-from skimage.color import label2rgb
-import torch.nn.functional as F
 import torchvision.transforms.functional as TF
 
-import matplotlib.pyplot as plt
-import matplotlib.colors as clr
-
-from myUtils.others import *
+from myUtils.others import normalize_01_array
 from skimage.color import label2rgb
-from skimage.morphology import remove_small_objects, remove_small_holes, erosion, dilation
 
 sys.path.append("..")
-from postprocessing.seg_tools import LABEL2RGB_COLOR_MAP
+from myUtils.seg_tools import LABEL2RGB_COLOR_MAP
 
 
 class ResultSaver:

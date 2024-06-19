@@ -1,29 +1,7 @@
-import os
-
-import cv2
-import denseCRF
-import matplotlib.pyplot as plt
-import pydensecrf
-import numpy as np
-import sklearn.metrics
-import torch
 import torch.nn as nn
-from skimage import morphology
-from skimage.color import label2rgb
-from sklearn.cluster import KMeans, HDBSCAN, AgglomerativeClustering, DBSCAN
-from sklearn.metrics import silhouette_score
-from sklearn.decomposition import PCA
-from torchvision import models
-import torchvision.transforms.functional as TF
-import torch.nn.functional as F
-
+from sklearn.cluster import KMeans
 from myUtils.config import Config
 from myUtils.others import *
-from postprocessing.seg_tools import *
-from scipy.sparse.linalg import eigsh
-
-from skimage import data, segmentation, graph
-from scipy.spatial.distance import cdist
 
 
 class DeepSpectral(nn.Module):

@@ -1,21 +1,15 @@
 import argparse
 import time
-
-import cv2
-import torch.optim
-from tqdm import *
-
-from myUtils.Dict2Class import Dict2Class
-from myUtils.Log import CsvLog, NpyLog
-from myUtils.config import *
+import numpy as np
+from tqdm import tqdm
+from myUtils.config import Config, Dict2Class
 from myUtils.metrics import Metrics
-from myUtils.others import *
+from myUtils.others import count_parameters, seed_everything
 from models import DeepSpectral
 from dataloader import DatasetLoader, MyDataset
-from postprocessing import seg_tools
 from myUtils.others import load_config_file
 from myUtils.result_saver import ResultSaver
-from postprocessing.seg_tools import SegTool
+from myUtils.seg_tools import SegTool
 
 # RUN_CHECK = True
 RUN_CHECK = False
@@ -23,8 +17,8 @@ RUN_CHECK = False
 LOG_SAVE = True
 # LOG_SAVE = False
 
-SAVE_OUTPUT_SEG = True
-# SAVE_OUTPUT_SEG = False
+# SAVE_OUTPUT_SEG = True
+SAVE_OUTPUT_SEG = False
 
 # ONLY_SAMPLES = True
 ONLY_SAMPLES = False
