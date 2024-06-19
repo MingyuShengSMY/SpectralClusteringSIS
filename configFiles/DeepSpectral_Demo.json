@@ -1,0 +1,105 @@
+{
+    "method_name": "DeepSpectral",
+    "method_config_dict": {
+        "repo": "facebookresearch/dino:main",
+        "name": "dino_vits8",
+        "__candidate_names__": ["dino_resnet50", "dino_vitb16", "dino_vitb8",
+            "dino_vits16", "dino_vits8", "dino_xcit_medium_24_p16", "dino_xcit_medium_24_p8",
+            "dino_xcit_small_12_p16", "dino_xcit_small_12_p8", "resnet50"],
+        "eigen_vectors_k": 15,
+        "cluster_k": 15
+    },
+    "crf_mark": false,
+    "task": "binary",
+    "dataset_list": [
+        {
+            "name": "Demo",
+            "image_dataset": true,
+            "train_val_test_split_ratio": [0.7, 0.1, 0.2],
+            "__comment1__": [
+                "it's a dict={'train': ['video_name', ...], 'val': [], 'test': []}",
+                "If train, val and test have the same video name, the frames in the video will be split",
+                "according to the split ratio"
+            ],
+            "set_split_preset": {
+                "train": [],
+                "val": [],
+                "test": ["set3"]
+            },
+            "use_for_train": [
+            ],
+            "use_for_val": [
+            ],
+            "use_for_test": [
+                "test_separate_samples.txt", "sample_samples.txt"
+            ],
+            "__comment2__":  "Empty if no black edge",
+            "valid_field_left_top": [
+            ],
+            "valid_field_size": [
+            ]
+        }
+    ],
+
+    "dataset_dir": {
+        "root": "dataset",
+        "inputX": "inputX",
+        "originalImage": "inputX/originImage",
+        "__comment5__": "it will be groundtruth/{task}",
+        "groundTruth": "groundTruth",
+        "output": "output"
+    },
+    "log_dir": "logs",
+
+    "__comment3__": "path_to_model_file",
+    "load_model_mark": false,
+    "model_load_from": "saved_models",
+    "model_save_dir": "saved_models",
+
+    "__comment1__": "empty if no need",
+    "model_input_size": [
+        512,
+        640
+    ],
+    "data_augmentation": false,
+    "loss_detail_key_list": ["Loss_Sum"],
+    "__comment4__": "for video dataset, the number of extra frames, [-1, 1] means 3 frames used including the mid one",
+    "train_frame_left_right": [
+        0,
+        0
+    ],
+    "test_frame_left_right": [
+        0,
+        0
+    ],
+
+    "epoch_num": 10,
+    "checkpoint_per_epoch_num": 1,
+    "early_stop_patience": 2,
+
+    "batch_size": 6,
+    "batch_size_te": 1,
+    "num_workers": 8,
+
+    "optimizer": "Adam",
+    "learning_rate": 0.0005,
+    "lr_beta1": 0.9,
+    "lr_beta2": 0.999,
+
+    "metrics": [
+            "mIoU",
+            "Acc",
+            "Dice",
+            "Time Cost Per Image",
+            "FPS",
+            "Params"
+        ],
+
+    "binary_seg_threshold": 0.0,
+
+    "random_seed": 2024,
+
+    "gpu_mark": true,
+
+    "verbose": true
+}

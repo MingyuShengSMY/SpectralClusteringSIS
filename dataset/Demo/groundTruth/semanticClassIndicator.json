@@ -1,0 +1,15 @@
+{
+    "__comment1__": ["indicator/class No.", "Pixel value gray", "Pixel value RGB"],
+    "background": [0, 0, [0, 0, 0]],
+    "instrument-shaft": [1, 20, [25, 100, 255]],
+    "instrument-clasper": [2, 40, [100, 25, 255]],
+    "instrument-wrist": [3, 60, [75, 75, 255]],    
+    "thread": [4, 80, [0, 255, 125]],
+    "clamps": [5, 100, [125, 0, 255]],
+    "suturing-needle": [6, 120, [125, 255, 0]],
+    "suction-instrument": [7, 140, [255, 0, 125]],
+    "ultrasound-probe": [8, 160, [255, 125, 0]],
+    "kidney-parenchyma": [9, 180, [50, 125, 50]],
+    "covered-kidney": [10, 200, [125, 50, 50]],
+    "small-intestine": [11, 220, [50, 50, 125]]
+}

@@ -1,0 +1,7 @@
+{
+    "__comment1__": ["indicator/class No.", "Pixel value gray", "Pixel value RGB"],
+    "background": [0, 0, [0, 0, 0]],
+    "shaft": [1, 80, [0, 125, 255]],
+    "wrist": [2, 160, [125, 0, 255]],
+    "claspers": [3, 240, [255, 0, 125]]
+}

@@ -1,0 +1,10 @@
+{
+    "__comment1__": ["indicator/class No.", "Pixel value gray", "Pixel value RGB"],
+    "background": [0, 0, [0, 0, 0]],
+    "instrument": [1, 40, [0, 125, 255]],
+    "thread": [2, 80, [0, 255, 125]],
+    "clamps": [3, 120, [125, 0, 255]],
+    "suturing-needle": [4, 160, [125, 255, 0]],
+    "suction-instrument": [5, 200, [255, 0, 125]],
+    "ultrasound-probe": [6, 240, [255, 125, 0]]
+}
