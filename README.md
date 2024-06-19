@@ -63,39 +63,39 @@ A directory `outputs` will be generated after running.
 
 ```
 outputs
-│   └── ConfigFileName
-│       └── random_seed-xxxx
-│           ├── DatasetName
-│           │   ├── sample
-│           │   │   ├── affinity_matrix
-│           │   │   │   └── videoName1
-│           │   │   │       ├── frameName1.png
-│           │   │   │       └── frameName2.png
-│           │   │   ├── eigenvectors
-│           │   │   │   └── videoName1
-│           │   │   │       ├── frameName1
-│           │   │   │       │   ├── 1-th_eigenvector.png
-│           │   │   │       │   ├── 2-th_eigenvector.png
-│           │   │   │       └── frameName2
-│           │   │   ├── gt_seg_overlay
-│           │   │   │   └── videoName1
-│           │   │   │       ├── frameName1.png
-│           │   │   │       └── frameName2.png
-│           │   │   ├── pre_seg_color
-│           │   │   │   └── videoName1
-│           │   │   │       ├── frameName1.png
-│           │   │   │       └── frameName2.png
-│           │   │   ├── pre_seg_overlay
-│           │   │   │   └── videoName1
-│           │   │   │       ├── frameName1.png
-│           │   │   │       └── frameName2.png
-│           │   │   └── pre_seg_raw                       (raw clustering result without post-processing)
-│           │   │       └── videoName1
-│           │   │           ├── frameName1.png
-│           │   │           └── frameName2.png
-│           └── logs
-│               ├── metrics.csv 
-│               └── single_img_miou.bin                   (record miou for each image)
+    └── ConfigFileName
+        └── random_seed-xxxx
+            ├── DatasetName
+            │   ├── sample
+            │   │   ├── affinity_matrix
+            │   │   │   └── videoName1
+            │   │   │       ├── frameName1.png
+            │   │   │       └── frameName2.png
+            │   │   ├── eigenvectors
+            │   │   │   └── videoName1
+            │   │   │       ├── frameName1
+            │   │   │       │   ├── 1-th_eigenvector.png
+            │   │   │       │   ├── 2-th_eigenvector.png
+            │   │   │       └── frameName2
+            │   │   ├── gt_seg_overlay
+            │   │   │   └── videoName1
+            │   │   │       ├── frameName1.png
+            │   │   │       └── frameName2.png
+            │   │   ├── pre_seg_color
+            │   │   │   └── videoName1
+            │   │   │       ├── frameName1.png
+            │   │   │       └── frameName2.png
+            │   │   ├── pre_seg_overlay
+            │   │   │   └── videoName1
+            │   │   │       ├── frameName1.png
+            │   │   │       └── frameName2.png
+            │   │   └── pre_seg_raw                       (raw clustering result without post-processing)
+            │   │       └── videoName1
+            │   │           ├── frameName1.png
+            │   │           └── frameName2.png
+            └── logs
+                ├── metrics.csv 
+                └── single_img_miou.bin                   (record miou for each image)
 ```
 
 
