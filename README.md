@@ -52,10 +52,7 @@ Or, you can manually set `txt` files.
 ## Run
 
 Run `python main.py --config_file configFiles/DeepSpectral_Demo.json`.
-
-This config file `config-endovis17-SS-full.json` is for the full model in the single stage setting (SS).
-
-For other experimental settings in our paper, please accordingly modify the config file and the `train_train_datadict`, `train_test_datadict`, `test_datadict` in `main.py` if necessary.
+Change configurations in the config file for more experiments.
 
 ## Outputs
 
@@ -101,9 +98,6 @@ outputs
 
 ## Citation
 Not released yet
-
-## License
-USYD
 
 
 
