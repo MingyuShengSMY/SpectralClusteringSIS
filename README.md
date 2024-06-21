@@ -5,7 +5,7 @@ Code for my paper 2024.07
 
 ## Method Overview
 
-![](paperFigure/overview.png)
+![](paperFigure/overview_white.png)
 
 ## Setup
 * Recommended Environment: Python 3.10.0+, Cuda 12.0+
