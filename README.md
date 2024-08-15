@@ -1,5 +1,4 @@
 # SpecClusteringSIS
-Code for my paper 2024.07
 
 [MyPaper (not released yet)](https_link).
 
