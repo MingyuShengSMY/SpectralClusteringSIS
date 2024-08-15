@@ -1,6 +1,6 @@
 # SpecClusteringSIS
 
-[MyPaper (not released yet)](https_link).
+[Paper (not released yet)](https_link).
 
 ## Method Overview
 
