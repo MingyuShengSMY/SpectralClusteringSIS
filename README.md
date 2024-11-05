@@ -1,6 +1,6 @@
 # SpecClusteringSIS
 
-[Paper (not released yet)](https_link).
+Code for [Revisiting Surgical Instrument Segmentation Without Human Intervention A Graph Partitioning View](https://doi.org/10.1145/3688868.3689193) (MCHM'24 at ACM MM'24)
 
 ## Method Overview
 
@@ -96,7 +96,22 @@ outputs
 
 
 ## Citation
-Not released yet
+
+BibTex
+```
+@inproceedings{sheng2024revisiting,
+  title={Revisiting Surgical Instrument Segmentation Without Human Intervention: A Graph Partitioning View},
+  author={Sheng, Mingyu and Fan, Jianan and Liu, Dongnan and Kikinis, Ron and Cai, Weidong},
+  booktitle={Proceedings of the 1st International Workshop on Multimedia Computing for Health and Medicine},
+  pages={16--25},
+  year={2024}
+}
+```
+
+Harvard
+```
+Sheng, M., Fan, J., Liu, D., Kikinis, R. and Cai, W., 2024, October. Revisiting Surgical Instrument Segmentation Without Human Intervention: A Graph Partitioning View. In Proceedings of the 1st International Workshop on Multimedia Computing for Health and Medicine (pp. 16-25).
+```
 
 
 
