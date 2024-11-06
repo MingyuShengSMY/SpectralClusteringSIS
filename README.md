@@ -102,7 +102,7 @@ BibTex
 @inproceedings{sheng2024revisiting,
   title={Revisiting Surgical Instrument Segmentation Without Human Intervention: A Graph Partitioning View},
   author={Sheng, Mingyu and Fan, Jianan and Liu, Dongnan and Kikinis, Ron and Cai, Weidong},
-  booktitle={Proceedings of the 1st International Workshop on Multimedia Computing for Health and Medicine},
+  booktitle={Proceedings of the 32nd ACM International Conference on Multimedia (ACM MM 2024) Workshop on Multimedia Computing for Health and Medicine (MCHM)},
   pages={16--25},
   year={2024}
 }
@@ -110,7 +110,7 @@ BibTex
 
 Harvard
 ```
-Sheng, M., Fan, J., Liu, D., Kikinis, R. and Cai, W., 2024, October. Revisiting Surgical Instrument Segmentation Without Human Intervention: A Graph Partitioning View. In Proceedings of the 1st International Workshop on Multimedia Computing for Health and Medicine (pp. 16-25).
+Sheng, M., Fan, J., Liu, D., Kikinis, R. and Cai, W., 2024, October. Revisiting Surgical Instrument Segmentation Without Human Intervention: A Graph Partitioning View. In Proceedings of the 32nd ACM International Conference on Multimedia (ACM MM 2024) Workshop on Multimedia Computing for Health and Medicine (MCHM) (pp. 16-25).
 ```
 
 
