@@ -115,7 +115,8 @@ BibTex
   author={Sheng, Mingyu and Fan, Jianan and Liu, Dongnan and Kikinis, Ron and Cai, Weidong},
   booktitle={Proceedings of the 32nd ACM International Conference on Multimedia (ACM MM 2024) Workshop on Multimedia Computing for Health and Medicine (MCHM)},
   pages={16--25},
-  year={2024}
+  year={2024},
+  url={https://doi.org/10.1145/3688868.3689193}
 }
 ```
 
