@@ -1,4 +1,4 @@
-# Revisiting Surgical Instrument Segmentation Without Human Intervention A Graph Partitioning View [[Paper Link](https://doi.org/10.1145/3688868.368919)]
+# Revisiting Surgical Instrument Segmentation Without Human Intervention A Graph Partitioning View [[Paper Link](https://doi.org/10.1145/3688868.3689193)]
 
 
 [Mingyu Sheng](https://mhamilton.net/)<sup>1</sup>,
