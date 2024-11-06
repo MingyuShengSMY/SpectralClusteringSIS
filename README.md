@@ -1,6 +1,17 @@
-# SpecClusteringSIS
+# Revisiting Surgical Instrument Segmentation Without Human Intervention A Graph Partitioning View [[Paper Link](https://doi.org/10.1145/3688868.368919)]
 
-Code for [Revisiting Surgical Instrument Segmentation Without Human Intervention A Graph Partitioning View](https://doi.org/10.1145/3688868.3689193) (MCHM'24 at ACM MM'24)
+
+[Mingyu Sheng](https://mhamilton.net/)<sup>1</sup>,
+[Jianan Fan](https://ieeexplore.ieee.org/author/37090057230)<sup>1</sup>,
+[Dongnan Liu](https://scholar.google.com/citations?hl=en&user=JZzb8XUAAAAJ)<sup>1</sup>,
+[Ron Kikinis](https://scholar.google.com/citations?user=n01L0mEAAAAJ&hl=en&oi=ao)<sup>2</sup>,
+[Weidong Cai](https://scholar.google.com/citations?hl=en&user=N8qTc2AAAAAJ)<sup>1</sup>
+
+<sup>1</sup> [The University of Sydney](https://www.sydney.edu.au/), 
+<sup>2</sup> [Harvard Medical School](https://hms.harvard.edu/)
+
+This paper was accepted by the 32nd ACM International Conference on Multimedia ([ACM MM 2024](https://2024.acmmm.org/)) Workshop on Multimedia Computing for Health and Medicine ([MCHM](https://visualcom-group.github.io/mchm-24/)).
+
 
 ## Method Overview
 
